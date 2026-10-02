@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mária Šankvalierová - Životopis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #120d1c;
+      color: #f8fafc;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .tab-btn.active {
+      border-bottom-width: 2px;
+      border-color: #f43f5e;
+      color: #fb7185;
+      background-color: rgba(244, 63, 94, 0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-8 flex justify-center items-center">
+
+  <div class="max-w-4xl w-full bg-slate-900/90 border border-pink-500/20 rounded-2xl shadow-2xl shadow-rose-950/40 overflow-hidden backdrop-blur-md">
+    
+    <!-- Header Section with Vibrant Rose-Violet Gradient -->
+    <header class="bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 p-6 md:p-8 relative">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight drop-shadow-sm">Mária Šankvalierová</h1>
+          <p class="text-rose-100 font-medium text-lg mt-1">Administratíva, Financie & Služby</p>
+        </div>
+        <a href="mailto:majkasank@gmail.com" class="bg-white/15 hover:bg-white/25 text-white border border-white/30 px-5 py-2.5 rounded-xl text-sm font-semibold transition backdrop-blur-md shadow-sm">
+          Kontaktovať
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-4 mt-6 text-sm text-rose-100/90">
+        <div class="flex items-center gap-1.5 bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+          <i data-lucide="map-pin" class="w-4 h-4 text-rose-300"></i>
+          <span>Prešov, Slovenská republika</span>
+        </div>
+        <div class="flex items-center gap-1.5 bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+          <i data-lucide="mail" class="w-4 h-4 text-rose-300"></i>
+          <a href="mailto:majkasank@gmail.com" class="hover:underline">majkasank@gmail.com</a>
+        </div>
+        <div class="flex items-center gap-1.5 bg-black/20 px-3 py-1 rounded-full backdrop-blur-sm">
+          <i data-lucide="phone" class="w-4 h-4 text-rose-300"></i>
+          <a href="tel:+421944066977" class="hover:underline">+421 944 066 977</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Profile Summary -->
+    <section class="p-6 md:p-8 border-b border-rose-500/10 bg-slate-900/60">
+      <h2 class="text-sm font-bold uppercase tracking-wider text-rose-400 mb-2 flex items-center gap-2">
+        <i data-lucide="user" class="w-4 h-4 text-rose-400"></i> Profesijný profil
+      </h2>
+      <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+        Spoľahlivá a detailne orientovaná pracovníčka s pestrou praxou v administratíve, spracovaní hotovosti, službách a výrobe. Disponujem silnými organizátorskými schopnosťami, znalosťou podnikového hospodárenia a administratívnych postupov. Vyznačujem sa výbornou pamäťou na ľudí, vysokou mierou zodpovednosti, flexibilitou a prístupom zameraným na podporu tímu.
+      </p>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <div class="flex border-b border-rose-500/15 bg-slate-950/60">
+      <button onclick="switchTab('experience')" id="tab-experience" class="tab-btn active flex-1 py-3.5 px-4 text-sm font-semibold flex items-center justify-center gap-2 text-slate-400 hover:text-rose-300 transition">
+        <i data-lucide="briefcase" class="w-4 h-4"></i> Prax
+      </button>
+      <button onclick="switchTab('skills')" id="tab-skills" class="tab-btn flex-1 py-3.5 px-4 text-sm font-semibold flex items-center justify-center gap-2 text-slate-400 hover:text-rose-300 transition">
+        <i data-lucide="laptop" class="w-4 h-4"></i> Zručnosti
+      </button>
+      <button onclick="switchTab('education')" id="tab-education" class="tab-btn flex-1 py-3.5 px-4 text-sm font-semibold flex items-center justify-center gap-2 text-slate-400 hover:text-rose-300 transition">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i> Vzdelanie & Jazyky
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="p-6 md:p-8">
+      
+      <!-- Experience Tab -->
+      <div id="content-experience" class="space-y-6">
+        
+        <div class="relative pl-6 border-l-2 border-rose-500/30">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-rose-500 shadow-sm shadow-rose-500/50"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-lg font-semibold text-slate-100">Pokladník – spracovanie hotovosti</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium w-fit">2025 – 2026</span>
+          </div>
+          <p class="text-sm font-medium text-rose-400/90 mt-0.5">Loomis a. s.</p>
+          <ul class="mt-2 space-y-1">
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Bezpečné spracovanie, počítanie a kontrola finančnej hotovosti</span>
+            </li>
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Dodržiavanie prísnych bezpečnostných štandardov a spracovanie sprievodnej dokumentácie</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative pl-6 border-l-2 border-rose-500/30">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-rose-500 shadow-sm shadow-rose-500/50"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-lg font-semibold text-slate-100">Operátor potravinárskej výroby</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium w-fit">2025</span>
+          </div>
+          <p class="text-sm font-medium text-rose-400/90 mt-0.5">Rid s. r. o. Košice</p>
+          <ul class="mt-2 space-y-1">
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Práca vo výrobnom procese, kontrola kvality a dodržiavanie hygienických noriem</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative pl-6 border-l-2 border-rose-500/30">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-rose-500 shadow-sm shadow-rose-500/50"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-lg font-semibold text-slate-100">Čašníčka / Zákaznícky servis</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium w-fit">2023 – 2024</span>
+          </div>
+          <p class="text-sm font-medium text-rose-400/90 mt-0.5">Agát pub</p>
+          <ul class="mt-2 space-y-1">
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Komunikácia so zákazníkmi, obsluha, práca s pokladňou a evidencia tržieb</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative pl-6 border-l-2 border-rose-500/30">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-rose-500 shadow-sm shadow-rose-500/50"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-lg font-semibold text-slate-100">Expedient</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium w-fit">2018 – 2022</span>
+          </div>
+          <p class="text-sm font-medium text-rose-400/90 mt-0.5">Šarišské pekárne a cukrárne Prešov</p>
+          <ul class="mt-2 space-y-1">
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Kontrola, balenie a príprava expedície tovaru, práca so skladovou evidenciou</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="relative pl-6 border-l-2 border-rose-500/30">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-900 border-2 border-rose-500 shadow-sm shadow-rose-500/50"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-lg font-semibold text-slate-100">Administratívna pracovníčka (Absolventská prax)</h3>
+            <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium w-fit">2017</span>
+          </div>
+          <p class="text-sm font-medium text-rose-400/90 mt-0.5">Úrad Prešovského samosprávneho kraja (PSK)</p>
+          <ul class="mt-2 space-y-1">
+            <li class="text-sm text-slate-300 flex items-start gap-2">
+              <i data-lucide="chevron-right" class="w-4 h-4 text-rose-400 shrink-0 mt-0.5"></i>
+              <span>Pôsobenie na sekretariáte odboru financií, spracovanie korešpondencie a evidencia dokumentov</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Skills Tab -->
+      <div id="content-skills" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">Strojopis (Desaťprstová metóda)</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">Administratíva</span>
+          </div>
+        </div>
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">MS Office (Word, Excel, PPT, Outlook)</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">PC Zručnosti</span>
+          </div>
+        </div>
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">Spracovanie hotovosti & Pokladňa</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">Financie</span>
+          </div>
+        </div>
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">Účtovná a skladová evidencia</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">Financie</span>
+          </div>
+        </div>
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">Podniková korešpondencia & Manažment</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">Administratíva</span>
+          </div>
+        </div>
+        <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20 flex items-start gap-3 shadow-sm hover:border-rose-500/40 transition">
+          <i data-lucide="sparkles" class="w-5 h-5 text-rose-400 shrink-0 mt-0.5"></i>
+          <div>
+            <h4 class="font-medium text-slate-200">Zákaznícky servis & Komunikácia</h4>
+            <span class="text-xs text-rose-300/80 font-mono mt-1 inline-block">Soft Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Tab -->
+      <div id="content-education" class="hidden space-y-8">
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-rose-400 mb-4 flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-4 h-4 text-rose-400"></i> Vzdelanie
+          </h3>
+          <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20">
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="font-semibold text-slate-100">Hotelová akadémia Prešov</h4>
+                <p class="text-sm text-slate-400">Maturitná skúška</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-rose-500/15 border border-rose-500/30 text-rose-300 font-medium">2012 – 2017</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-rose-400 mb-4 flex items-center gap-2">
+            <i data-lucide="award" class="w-4 h-4 text-rose-400"></i> Certifikáty & Kurzy
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-rose-500/10 border border-rose-500/30 px-3.5 py-1.5 rounded-full text-sm font-medium text-rose-200">Barmanský kurz</span>
+            <span class="bg-rose-500/10 border border-rose-500/30 px-3.5 py-1.5 rounded-full text-sm font-medium text-rose-200">Baristický kurz</span>
+            <span class="bg-rose-500/10 border border-rose-500/30 px-3.5 py-1.5 rounded-full text-sm font-medium text-rose-200">Pivný kurz</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-rose-400 mb-4 flex items-center gap-2">
+            <i data-lucide="languages" class="w-4 h-4 text-rose-400"></i> Jazykové znalosti
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20">
+              <h4 class="font-semibold text-slate-100">Anglický jazyk</h4>
+              <p class="text-sm text-slate-400 mt-1">Pokročilá úroveň (B2 / Maturita)</p>
+            </div>
+            <div class="bg-slate-950/50 p-4 rounded-xl border border-rose-500/20">
+              <h4 class="font-semibold text-slate-100">Nemecký jazyk</h4>
+              <p class="text-sm text-slate-400 mt-1">Základná úroveň (A1/A2)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(`content-experience`).classList.add('hidden');
+      document.getElementById(`content-skills`).classList.add('hidden');
+      document.getElementById(`content-education`).classList.add('hidden');
+
+      document.getElementById(`tab-${tabName}`).classList.add('active');
+      document.getElementById(`content-${tabName}`).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
